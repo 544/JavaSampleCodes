@@ -1,0 +1,1 @@
+いずれかのColleagueにて動き(run)があった場合、Mediatorを介して他のColleagueにそれを伝える(advice)パターン

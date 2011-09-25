@@ -1,0 +1,16 @@
+package demo.design.strategy;
+
+import utils.LoggerUtils;
+
+class Context {
+	Strategy strategy;
+	
+	public void doSomething() {
+		
+		System.out.println("‹¤’Êˆ— " + LoggerUtils.getSig());
+		strategy.logic1();
+		strategy.logic2();
+		
+	}
+
+}

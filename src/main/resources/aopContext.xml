@@ -7,7 +7,10 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<!-- コンポーネントスキャンの複数パッケージはカンマ区切り -->
-	<context:component-scan base-package="demo.spring.di"/>
+	<context:component-scan base-package="demo.spring.aop"/>
+
+	<!-- for AspectJ -->
+	<aop:aspectj-autoproxy proxy-target-class="true"/>
 
 
 </beans>
