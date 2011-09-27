@@ -6,6 +6,15 @@ public class Person extends BaseBean {
 
 	private String name;
 	private int age;
+	
+	public Person() {
+		super();
+	}
+	
+	public Person(String name,int age){
+		this.name = name;
+		this.age = age;
+	}
 
 	/**
 	 * @return the name
