@@ -4,17 +4,17 @@ import utils.LoggerUtils;
 
 class Client {
 	public static void main(String[] args) {
-		// ConcreteClass‚ÌÀ‘•Ÿ‘æ‚Å“Æ©ƒƒWƒbƒN‚ğØ‚è‘Ö‚¦‚éB‹¤’Êˆ—‚ÍeƒNƒ‰ƒX‚ÅÀ‘•B
+		// ConcreteClassã®å®Ÿè£…æ¬¡ç¬¬ã§ç‹¬è‡ªãƒ­ã‚¸ãƒƒã‚¯ã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹ã€‚å…±é€šå‡¦ç†ã¯è¦ªã‚¯ãƒ©ã‚¹ã§å®Ÿè£…ã€‚
 		AbstractClass c1 = new ConcreteClass();
 		c1.templateMethod();
 		
 		System.out.println("--------------------");
 		
-		// –³–¼ƒNƒ‰ƒX‚ğg‚Á‚Ä‚İ‚½‚èB
+		// ç„¡åã‚¯ãƒ©ã‚¹ã‚’ä½¿ã£ã¦ã¿ãŸã‚Šã€‚
 		AbstractClass c2 = new AbstractClass() {
 			@Override
 			void method() {
-				System.out.println("“Æ©ˆ—:" + LoggerUtils.getSig());
+				System.out.println("ç‹¬è‡ªå‡¦ç†:" + LoggerUtils.getSig());
 			}
 		};
 		c2.templateMethod();

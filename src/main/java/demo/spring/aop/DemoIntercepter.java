@@ -11,18 +11,18 @@ import org.springframework.stereotype.Component;
 class DemoIntercepter {
 
 
-	/// Pointcut’è‹`B
+	/// Pointcutå®šç¾©ã€‚
 	@SuppressWarnings("unused")
-	@Pointcut("execution(public String demo.spring.aop..*(..))")	//public –ß‚èString demoƒTƒuŠK‘w do‚ªŠÜ‚Ü‚ê‚éƒƒ\ƒbƒh–¼ 
+	@Pointcut("execution(public String demo.spring.aop..*(..))")	//public æˆ»ã‚ŠString demoã‚µãƒ–éšå±¤ doãŒå«ã¾ã‚Œã‚‹ãƒ¡ã‚½ãƒƒãƒ‰å 
     private void anyPublicOperation() {}
 	
 
-	// ÀÛ‚ÌAdvice‚ÌÀ‘•
-	//   BeforeƒAƒhƒoƒCƒX			–{—ˆ‚Ìˆ—‚Ì‘O
-	//   AfterReturningƒAƒhƒoƒCƒX	–{—ˆ‚Ìˆ—‚Ì³íI—¹Œã
-	//   AfterƒAƒhƒoƒCƒX			–{—ˆ‚Ìˆ—ŒãCI—¹ğŒ‚ğ–â‚í‚¸Às
-	//   AfterThrowingƒAƒhƒoƒCƒX	–{—ˆ‚Ìˆ—‚Ì’†‚Å—áŠO‚ªƒXƒ[‚³‚ê‚½‚Æ‚«
-	//   AroundƒAƒhƒoƒCƒX			–{—ˆ‚Ìˆ—‚Ì‘OŒã	
+	// å®Ÿéš›ã®Adviceã®å®Ÿè£…
+	//   Beforeã‚¢ãƒ‰ãƒã‚¤ã‚¹			æœ¬æ¥ã®å‡¦ç†ã®å‰
+	//   AfterReturningã‚¢ãƒ‰ãƒã‚¤ã‚¹	æœ¬æ¥ã®å‡¦ç†ã®æ­£å¸¸çµ‚äº†å¾Œ
+	//   Afterã‚¢ãƒ‰ãƒã‚¤ã‚¹			æœ¬æ¥ã®å‡¦ç†å¾Œï¼Œçµ‚äº†æ¡ä»¶ã‚’å•ã‚ãšå®Ÿè¡Œ
+	//   AfterThrowingã‚¢ãƒ‰ãƒã‚¤ã‚¹	æœ¬æ¥ã®å‡¦ç†ã®ä¸­ã§ä¾‹å¤–ãŒã‚¹ãƒ­ãƒ¼ã•ã‚ŒãŸã¨ã
+	//   Aroundã‚¢ãƒ‰ãƒã‚¤ã‚¹			æœ¬æ¥ã®å‡¦ç†ã®å‰å¾Œ	
 	
 //	@Before("demo.springfw.aop.components.DemoInterceptor.anyPublicOperation()")
 //	public void logBefore(JoinPoint jp) {

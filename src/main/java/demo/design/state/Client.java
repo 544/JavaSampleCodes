@@ -6,7 +6,7 @@ class Client {
 		
 		Context ctx = new Context(new ConcreteState_Morning());
 
-		// ŒÄ‚Ño‚·‚½‚Ñ‚Éó‘Ô‚ª‚©‚í‚éB
+		// å‘¼ã³å‡ºã™ãŸã³ã«çŠ¶æ…‹ãŒã‹ã‚ã‚‹ã€‚
 		ctx.doSomething();
 		ctx.doSomething();
 		ctx.doSomething();

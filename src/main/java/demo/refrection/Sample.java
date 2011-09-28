@@ -23,26 +23,26 @@ public class Sample {
 	public static void main(String[] args) throws ClassNotFoundException,
 			InstantiationException, IllegalAccessException {
 
-		// ƒNƒ‰ƒX–¼‚©‚çClass‚ğæ“¾
+		// ã‚¯ãƒ©ã‚¹åã‹ã‚‰Classã‚’å–å¾—
 		@SuppressWarnings("unchecked")
 		Class<Person> pClazz = (Class<Person>) Class
 				.forName("demo.bean.Person");
 
 		System.out.println(pClazz);
 
-		// ƒNƒ‰ƒX‚©‚çƒpƒ‰ƒ[ƒ^æ“¾
+		// ã‚¯ãƒ©ã‚¹ã‹ã‚‰ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿å–å¾—
 		Field[] fields = pClazz.getDeclaredFields();
 		for (Field field : fields) {
 			System.out.println(field.toString());
 		}
 
-		// ƒNƒ‰ƒX‚©‚çƒƒ\ƒbƒhæ“¾
+		// ã‚¯ãƒ©ã‚¹ã‹ã‚‰ãƒ¡ã‚½ãƒƒãƒ‰å–å¾—
 		Method[] methods = pClazz.getDeclaredMethods();
 		for (Method method : methods) {
 			System.out.println(method);
 		}
 
-		// Class‚©‚çƒCƒ“ƒXƒ^ƒ“ƒX¶¬
+		// Classã‹ã‚‰ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆ
 		Person person = pClazz.newInstance();
 		person.setName("hoge");
 		person.setAge(11);

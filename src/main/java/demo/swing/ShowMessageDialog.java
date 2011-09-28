@@ -5,8 +5,8 @@ import javax.swing.JOptionPane;
 public class ShowMessageDialog {
 	public static void main(String[] args) {
 		
-		// ƒƒbƒZ[ƒWƒ_ƒCƒAƒƒO•\¦
-		JOptionPane.showMessageDialog(null, "ƒnƒ[I");
+		// ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ€ã‚¤ã‚¢ãƒ­ã‚°è¡¨ç¤º
+		JOptionPane.showMessageDialog(null, "ãƒãƒ­ãƒ¼ï¼");
 
 	}
 

@@ -12,7 +12,7 @@ class Client {
 
 		DemoService b = ctx.getBean(DemoService.class);
 
-		// AutoWired‚ÅInjection‚³‚ê‚½bean‚ªæ“¾‚Å‚«‚Ä‚éB
+		// AutoWiredã§Injectionã•ã‚ŒãŸbeanãŒå–å¾—ã§ãã¦ã‚‹ã€‚
 		System.out.println(b.toString());
 		System.out.println(b.comp.toString());
 

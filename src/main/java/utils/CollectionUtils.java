@@ -11,7 +11,7 @@ import java.util.TreeSet;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * CollectionŠÖ˜A‚ÌUtility
+ * Collectioné–¢é€£ã®Utility
  * @author matsumoto-m
  *
  */
@@ -20,14 +20,14 @@ public final class CollectionUtils {
 	private CollectionUtils() {}
 
 	/**
-	 * •¶š—ñKey/Value‚ÈMap‚ğì¬‚·‚éUtilityƒƒ\ƒbƒh
+	 * æ–‡å­—åˆ—Key/ValueãªMapã‚’ä½œæˆã™ã‚‹Utilityãƒ¡ã‚½ãƒƒãƒ‰
 	 * <pre>
-	 * ˆø”‚Ì‘®‚ÍA"key -> value" ‚Æ‚·‚éB
-	 * KV‚É‚ ‚½‚é•¶š—ñ‚Ì‘OŒã‹ó”’‚Í–³‹‚³‚ê‚éB
-	 * ‚Ü‚½A‹ó”’‚ğValue‚ÉƒZƒbƒg‚µ‚½‚¢ê‡‚ÍA''‚ÅˆÍ‚Ş‚±‚Æ
-	 * ƒNƒ‰ƒX–¼‚ª’·‚¢‚Ì‚ÅAStaticImport‚ª‚¨‚·‚·‚ß
+	 * å¼•æ•°ã®æ›¸å¼ã¯ã€"key -> value" ã¨ã™ã‚‹ã€‚
+	 * KVã«ã‚ãŸã‚‹æ–‡å­—åˆ—ã®å‰å¾Œç©ºç™½ã¯ç„¡è¦–ã•ã‚Œã‚‹ã€‚
+	 * ã¾ãŸã€ç©ºç™½ã‚’Valueã«ã‚»ãƒƒãƒˆã—ãŸã„å ´åˆã¯ã€''ã§å›²ã‚€ã“ã¨
+	 * ã‚¯ãƒ©ã‚¹åãŒé•·ã„ã®ã§ã€StaticImportãŒãŠã™ã™ã‚
 	 *
-	 * g—p—áF
+	 * ä½¿ç”¨ä¾‹ï¼š
 	 * import static jp.co.future.ars.common.utils.CollectionUtils.map;
 	 * Map&lt;String, Object&gt; kv = CollectionUtils.map(
 	 *   " 1 -> 2",
@@ -35,11 +35,11 @@ public final class CollectionUtils {
 	 *   " judas priest -> painkiller "
 	 * );
 	 *
-	 * => Œ‹‰Ê‚ÌMap‚ÌToString {1=2, led zeppelin= blcak dog , judas priest=painkiller}
+	 * => çµæœã®Mapã®ToString {1=2, led zeppelin= blcak dog , judas priest=painkiller}
 	 *
 	 * </pre>
-	 * @param srcs Map‚ÉŠi”[‚µ‚½‚¢ƒf[ƒ^‚ğ"key -> value"‚Ì‘®‚Åw’è
-	 * @return ¶¬‚µ‚½HashMap
+	 * @param srcs Mapã«æ ¼ç´ã—ãŸã„ãƒ‡ãƒ¼ã‚¿ã‚’"key -> value"ã®æ›¸å¼ã§æŒ‡å®š
+	 * @return ç”Ÿæˆã—ãŸHashMap
 	 */
 	public static Map<String, String> map(String... params) {
 		Map<String, String> result = new HashMap<String, String>();
@@ -53,19 +53,19 @@ public final class CollectionUtils {
 	}
 
 	/**
-	 * List‚ğì¬‚·‚éUtilityƒƒ\ƒbƒhB
+	 * Listã‚’ä½œæˆã™ã‚‹Utilityãƒ¡ã‚½ãƒƒãƒ‰ã€‚
 	 * <pre>
-	 * ”CˆÓ‚ÌƒIƒuƒWƒFƒNƒg‚Ì“K—p‰Â”\
-	 * ƒNƒ‰ƒX–¼‚ª’·‚¢‚Ì‚ÅAStaticImport‚ª‚¨‚·‚·‚ß
+	 * ä»»æ„ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é©ç”¨å¯èƒ½
+	 * ã‚¯ãƒ©ã‚¹åãŒé•·ã„ã®ã§ã€StaticImportãŒãŠã™ã™ã‚
 	 *
-	 * g—p—áF
+	 * ä½¿ç”¨ä¾‹ï¼š
 	 * import static jp.co.future.ars.common.utils.CollectionUtils.list;
 	 * List&lt;String&gt; li = list("123", "45", "foo");
 	 *
 	 * </pre>
-	 * @param <T> List‚ÉŠi”[‚·‚éŒ^
-	 * @param params list‚ÉŠi”[‚·‚éƒIƒuƒWƒFƒNƒg‚ğ‰Â•Ï’·ˆø”‚Åw’è‚·‚éB
-	 * @return ¶¬‚µ‚½ArrayList
+	 * @param <T> Listã«æ ¼ç´ã™ã‚‹å‹
+	 * @param params listã«æ ¼ç´ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å¯å¤‰é•·å¼•æ•°ã§æŒ‡å®šã™ã‚‹ã€‚
+	 * @return ç”Ÿæˆã—ãŸArrayList
 	 */
 	public static <T> List<T> list(T... params) {
 		List<T> result = new ArrayList<T>();
@@ -76,20 +76,20 @@ public final class CollectionUtils {
 	}
 
 	/**
-	 * HashSet‚ğì¬‚·‚éUtilityƒƒ\ƒbƒhB
+	 * HashSetã‚’ä½œæˆã™ã‚‹Utilityãƒ¡ã‚½ãƒƒãƒ‰ã€‚
 	 * <pre>
-	 * HashSet‚ğ•Ô‚·‚Ì‚Å‡˜‚Í•s’è‚È‚Ì‚Å’ˆÓ
-	 * ”CˆÓ‚ÌƒIƒuƒWƒFƒNƒg‚Ì“K—p‰Â”\
-	 * ƒNƒ‰ƒX–¼‚ª’·‚¢‚Ì‚ÅAStaticImport‚ª‚¨‚·‚·‚ß
+	 * HashSetã‚’è¿”ã™ã®ã§é †åºã¯ä¸å®šãªã®ã§æ³¨æ„
+	 * ä»»æ„ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é©ç”¨å¯èƒ½
+	 * ã‚¯ãƒ©ã‚¹åãŒé•·ã„ã®ã§ã€StaticImportãŒãŠã™ã™ã‚
 	 *
-	 * g—p—áF
+	 * ä½¿ç”¨ä¾‹ï¼š
 	 * import static jp.co.future.ars.common.utils.CollectionUtils.hashSet;
 	 * Set&lt;String&gt; li = hashSet("123", "45", "foo");
 	 *
 	 * </pre>
-	 * @param <T> Set‚ÉŠi”[‚·‚éŒ^
-	 * @param params Set‚ÉŠi”[‚·‚éƒIƒuƒWƒFƒNƒg‚ğ‰Â•Ï’·ˆø”‚Åw’è‚·‚éB
-	 * @return ¶¬‚µ‚½HashSet
+	 * @param <T> Setã«æ ¼ç´ã™ã‚‹å‹
+	 * @param params Setã«æ ¼ç´ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å¯å¤‰é•·å¼•æ•°ã§æŒ‡å®šã™ã‚‹ã€‚
+	 * @return ç”Ÿæˆã—ãŸHashSet
 	 */
 	public static <T> Set<T> hashSet(T... params) {
 		Set<T> result = new HashSet<T>();
@@ -100,19 +100,19 @@ public final class CollectionUtils {
 	}
 
 	/**
-	 * —v‘f‚Ì¸‡‚Åƒ\[ƒg‚³‚ê‚éTreeSet‚ğì¬‚·‚éUtilityƒƒ\ƒbƒhB
+	 * è¦ç´ ã®æ˜‡é †ã§ã‚½ãƒ¼ãƒˆã•ã‚Œã‚‹TreeSetã‚’ä½œæˆã™ã‚‹Utilityãƒ¡ã‚½ãƒƒãƒ‰ã€‚
 	 * <pre>
-	 * ”CˆÓ‚ÌƒIƒuƒWƒFƒNƒg‚Ì“K—p‰Â”\
-	 * ƒNƒ‰ƒX–¼‚ª’·‚¢‚Ì‚ÅAStaticImport‚ª‚¨‚·‚·‚ß
+	 * ä»»æ„ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é©ç”¨å¯èƒ½
+	 * ã‚¯ãƒ©ã‚¹åãŒé•·ã„ã®ã§ã€StaticImportãŒãŠã™ã™ã‚
 	 *
-	 * g—p—áF
+	 * ä½¿ç”¨ä¾‹ï¼š
 	 * import static jp.co.future.ars.common.utils.CollectionUtils.treeSet;
 	 * Set&lt;String&gt; li = treeSet("123", "45", "foo");
 	 *
 	 * </pre>
-	 * @param <T> Set‚ÉŠi”[‚·‚éŒ^
-	 * @param params Set‚ÉŠi”[‚·‚éƒIƒuƒWƒFƒNƒg‚ğ‰Â•Ï’·ˆø”‚Åw’è‚·‚éB
-	 * @return ¶¬‚µ‚½TreeSet
+	 * @param <T> Setã«æ ¼ç´ã™ã‚‹å‹
+	 * @param params Setã«æ ¼ç´ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å¯å¤‰é•·å¼•æ•°ã§æŒ‡å®šã™ã‚‹ã€‚
+	 * @return ç”Ÿæˆã—ãŸTreeSet
 	 */
 	public static <T> Set<T> treeSet(T... params) {
 		Set<T> result = new TreeSet<T>();
@@ -124,14 +124,14 @@ public final class CollectionUtils {
 
 
 	/**
-	 * Map‚©‚çList‚Ö•ÏŠ·‚·‚éB
+	 * Mapã‹ã‚‰Listã¸å¤‰æ›ã™ã‚‹ã€‚
 	 * <pre>
-	 * List‚ÖŠi”[‚·‚é‡”Ô‚ÍAKey€–Ú‚Ì¸‡‚ÅŠi”[B
-	 * Key’l‚ÍÌ‚Ä‚ç‚ê‚éB
+	 * Listã¸æ ¼ç´ã™ã‚‹é †ç•ªã¯ã€Keyé …ç›®ã®æ˜‡é †ã§æ ¼ç´ã€‚
+	 * Keyå€¤ã¯æ¨ã¦ã‚‰ã‚Œã‚‹ã€‚
 	 * </pre>
 	 *
-	 * @param source •ÏŠ·Œ³Map
-	 * @return •ÏŠ·‚µ‚ÄV‹Kì¬‚µ‚½List
+	 * @param source å¤‰æ›å…ƒMap
+	 * @return å¤‰æ›ã—ã¦æ–°è¦ä½œæˆã—ãŸList
 	 */
 	public static <K,V> List<V> map2ListKeyAsc(Map<K, V> source) {
 		List<V> result = new ArrayList<V>();
@@ -145,21 +145,21 @@ public final class CollectionUtils {
 
 	// ===================== private ===================================================
 	/**
-	 * TrimÏ‚İ‚Ì•¶š—ñ‚Ì‘OŒã‚Ìw’è‚³‚ê‚½•¶š‚ğíœ‚µ‚Ä•Ô‚·B
+	 * Trimæ¸ˆã¿ã®æ–‡å­—åˆ—ã®å‰å¾Œã®æŒ‡å®šã•ã‚ŒãŸæ–‡å­—ã‚’å‰Šé™¤ã—ã¦è¿”ã™ã€‚
 	 */
 	private static String rmvPrePostSc(String target) {
 		final char SC = '\'';
-		// ' ‚ÅˆÍ‚Ü‚ê‚Ä‚¢‚½ê‡‚Ì‚İAíœ‚·‚éB
+		// ' ã§å›²ã¾ã‚Œã¦ã„ãŸå ´åˆã®ã¿ã€å‰Šé™¤ã™ã‚‹ã€‚
 		if(target.charAt(0) != SC || target.charAt(target.length() -1) != SC)
 			return target;
-		//‘OŒã1•¶š‚Ã‚Âíœ
+		//å‰å¾Œ1æ–‡å­—ã¥ã¤å‰Šé™¤
 		return StringUtils.substring(target, 1 , target.length() -1 );
 	}
 
 	public static void main(String[] args) {
 
 
-		Set<String> s = hashSet("A", "‚ ", "0");
+		Set<String> s = hashSet("A", "ã‚", "0");
 
 
 		for(String d : s) {

@@ -6,12 +6,12 @@ abstract class AbstractClass {
 	abstract void method();
 
 	public void templateMethod() {
-		System.out.println("‘Oˆ—:" + LoggerUtils.getSig());
+		System.out.println("å‰å‡¦ç†:" + LoggerUtils.getSig());
 
-		// “ÆŽ©ˆ—‚ÍƒTƒuƒNƒ‰ƒX‚ÅŽÀ‘•
+		// ç‹¬è‡ªå‡¦ç†ã¯ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã§å®Ÿè£…
 		method();
 		
-		System.out.println("Œãˆ—:" + LoggerUtils.getSig());
+		System.out.println("å¾Œå‡¦ç†:" + LoggerUtils.getSig());
 
 	}
 

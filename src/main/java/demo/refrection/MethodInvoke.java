@@ -12,10 +12,10 @@ public class MethodInvoke {
 			IllegalAccessException, InvocationTargetException {
 		Service1 s = new Service1();
 
-		// ƒƒ\ƒbƒh–¼‚Æˆø”‚ÌŒ^‚ğw’è‚µ‚ÄMethod‚ğæ“¾B
+		// ãƒ¡ã‚½ãƒƒãƒ‰åã¨å¼•æ•°ã®å‹ã‚’æŒ‡å®šã—ã¦Methodã‚’å–å¾—ã€‚
 		Method m = s.getClass().getDeclaredMethod("doIt", String.class);
 
-		// ƒƒ\ƒbƒhŒÄ‚Ño‚µ
+		// ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—
 		@SuppressWarnings("unused")
 		Object result = m.invoke(s, "hoge");
 

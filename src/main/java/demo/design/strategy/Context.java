@@ -7,7 +7,7 @@ class Context {
 	
 	public void doSomething() {
 		
-		System.out.println("‹¤’Êˆ— " + LoggerUtils.getSig());
+		System.out.println("å…±é€šå‡¦ç† " + LoggerUtils.getSig());
 		strategy.logic1();
 		strategy.logic2();
 		

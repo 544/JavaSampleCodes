@@ -11,7 +11,7 @@ public class PerformChecker {
 		
 		long post = System.nanoTime();
 		NumberFormat nf = NumberFormat.getNumberInstance();
-		System.out.println("[" +  nf.format((post - pre)/1000) + "] É  sec" );
+		System.out.println("[" +  nf.format((post - pre)/1000) + "] Œº sec" );
 
 	}
 

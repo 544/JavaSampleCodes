@@ -6,7 +6,7 @@ class ConcreteClass extends AbstractClass {
 
 	@Override
 	void method() {
-		System.out.println("“Æ©ˆ—:" + LoggerUtils.getSig());
+		System.out.println("ç‹¬è‡ªå‡¦ç†:" + LoggerUtils.getSig());
 
 	}
 
