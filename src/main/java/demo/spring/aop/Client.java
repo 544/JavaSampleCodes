@@ -7,7 +7,7 @@ class Client {
 	
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"aopContext.xml");
+				"context/aopContext.xml");
 		
 		Service1 service = ctx.getBean(Service1.class);
 		service.doIt("hoge");

@@ -8,7 +8,7 @@ class Client {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"diContext.xml");
+				"context/diContext.xml");
 
 		DemoService b = ctx.getBean(DemoService.class);
 
