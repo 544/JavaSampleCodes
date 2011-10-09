@@ -28,6 +28,9 @@ public class SampleService {
 			SimpleLogger.debug("..." +bean.toString());
 		}
 
+		
+		TestBean bean3 = dao.find(3);
+		SimpleLogger.debug(bean3.toString());
 	}
 
 	/**

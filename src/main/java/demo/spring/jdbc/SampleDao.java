@@ -37,8 +37,19 @@ public class SampleDao {
 				});
 	}
 
-	public String find(int id) {
-		return null;
+	public TestBean find(Integer id) {
+		return (TestBean) jdbcTemplate.queryForObject("select * from test where id = ?",
+				new ParameterizedRowMapper<TestBean>() {
+
+					@Override
+					public TestBean mapRow(ResultSet rs, int arg1)
+							throws SQLException {
+						TestBean result = new TestBean();
+						result.setId(rs.getInt(1));
+						result.setName(rs.getString(2));
+						return result;
+					}
+				}, id);
 	}
 
 	public void insert(TestBean bean) {
