@@ -17,8 +17,10 @@ public class SampleService {
 	@Transactional
 	public void doSomeThing() {
 		
-//		TestBean bean1 = new TestBean(3,"hoge");
-//		dao.insert(bean1);
+		TestBean bean1 = new TestBean(3,"piyoxs");
+		dao.update(bean1);
+		
+		
 		
 		List<TestBean> list = dao.findAll();
 

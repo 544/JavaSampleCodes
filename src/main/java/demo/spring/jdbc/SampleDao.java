@@ -48,10 +48,12 @@ public class SampleDao {
 	}
 
 	public void update(TestBean bean) {
-
+		jdbcTemplate.update("update TEST SET NAME =  ? where id = ? ",
+				bean.getName(), bean.getId());
 	}
 
 	public void delete(int id) {
+		jdbcTemplate.update("delete TEST where id = ? ", id);
 
 	}
 
